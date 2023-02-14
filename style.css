@@ -25,17 +25,11 @@ li {
 }
 
 .item{
-    width:50%;
     display: inline-flex;
     flex-direction:column;
     justify-content: top;
 }
 
-.row {
-  display: flex;
-}
 
-.column {
-  flex: 50%;
-}
+
 
