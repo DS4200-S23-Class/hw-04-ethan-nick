@@ -31,7 +31,7 @@ li {
     justify-content: top;
 }
 
-circle:hover {
+.item:hover {
     background-color: "yellow";
 }
 
