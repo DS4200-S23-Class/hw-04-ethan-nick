@@ -12,12 +12,11 @@ li {
     text-align: center;
 }
 
-.point {
+#point {
     fill: purple;
-    background-color: blue;
 }
 
-.point:hover {
+#point:hover {
     fill: red;
 }
 
