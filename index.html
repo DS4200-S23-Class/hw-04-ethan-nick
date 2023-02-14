@@ -67,7 +67,18 @@
         <li></li>
         <li></li>
     </div>
-
+<script>
+const point = document.getElementById("point");
+point.addEventListener("click", addBorder);
+	
+function addBorder() {
+	const points = Array.from(document.getElementsByClassName("point"));
+	points.forEach(point => {
+		point.style.border = "2px solid green";
+	});
+}
+</script>
+    
 <script src="script.js"></script>
 </body>
 
