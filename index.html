@@ -14,12 +14,18 @@
     <div class="box">
         <div class="item" style="flex:60%">
             <svg width="300px" height="300px">
-                <circle id="point" cx="30" cy="240" r="8"/> <!-- (1,2) maps to (30, 300-60) = (30, 240) -->
-                <circle id="point" cx="60" cy="180" r="8"/> <!-- (2,4) maps to (60, 300-120) = (60, 180) -->
-                <circle id="point" cx="180" cy="240" r="8"/> <!-- (6,2) maps to (180, 300-60) = (180, 240) -->
-                <circle id="point" cx="270" cy="30" r="8"/> <!-- (9,9) maps to (270, 300-270) = (270, 30) -->
-                <line id="axis" x1="1" y1="1" x2="1" y2="299" stroke="black" stroke-width="5"/> <!-- vertical axis -->
-                <line id="axis" x1="1" y1="299" x2="299" y2="299" stroke="black" stroke-width="5"/> <!-- horizontal axis -->
+                <!-- (1,2) maps to (30, 300-60) = (30, 240) -->
+                <circle id="point" cx="30" cy="240" r="8" onclick="highlight()"/> 
+                <!-- (2,4) maps to (60, 300-120) = (60, 180) -->
+                <circle id="point" cx="60" cy="180" r="8" onclick="highlight()"/> 
+                <!-- (6,2) maps to (180, 300-60) = (180, 240) -->
+                <circle id="point" cx="180" cy="240" r="8" onclick="highlight()"/> 
+                <!-- (9,9) maps to (270, 300-270) = (270, 30) -->
+                <circle id="point" cx="270" cy="30" r="8" onclick="highlight()"/> 
+                <!-- vertical axis -->
+                <line id="axis" x1="1" y1="1" x2="1" y2="299" stroke="black" stroke-width="5"/> 
+                <!-- horizontal axis -->
+                <line id="axis" x1="1" y1="299" x2="299" y2="299" stroke="black" stroke-width="5"/> 
             </svg>
             
         </div>
@@ -55,7 +61,7 @@
                 </select>
             </p>
             <p>
-                <button id="add">Add point</button>
+                <button id="add" type="button" onclick="updatescore()">Add point</button>
             </p>
         </div>
     </div>
