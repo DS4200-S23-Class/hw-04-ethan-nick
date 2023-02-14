@@ -14,7 +14,6 @@ li {
     text-align: center;
 }
 
-
 /* style for flexbox
     box = parent, item=child */
 
@@ -30,5 +29,13 @@ li {
     display: inline-flex;
     flex-direction:column;
     justify-content: top;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
 
