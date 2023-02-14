@@ -13,33 +13,62 @@
 
     <div class="box">
         <div class="item" style="flex:60%">
-            <svg width="250px" height="250px">
-                <circle id="point" cx="25" cy="200" r="8"/> <!-- (1,2) maps to (25, 250-50) = (25, 200) -->
-                <circle id="point" cx="50" cy="150" r="8"/> <!-- (2,4) maps to (50, 250-100) = (50, 150) -->
-                <circle id="point" cx="150" cy="200" r="8"/> <!-- (6,2) maps to (150, 250-50) = (150, 200) -->
-                <circle id="point" cx="225" cy="25" r="8"/> <!-- (9,9) maps to (225, 250-225) = (225, 25) -->
-                <line id="axis" x1="1" y1="1" x2="1" y2="249" stroke="black" stroke-width="5"/> <!-- vertical axis -->
-                <line id="axis" x1="1" y1="249" x2="249" y2="249" stroke="black" stroke-width="5"/> <!-- horizontal axis -->
+            <svg width="300px" height="300px">
+                <circle id="point" cx="30" cy="240" r="8"/> <!-- (1,2) maps to (30, 300-60) = (30, 240) -->
+                <circle id="point" cx="60" cy="180" r="8"/> <!-- (2,4) maps to (60, 300-120) = (60, 180) -->
+                <circle id="point" cx="180" cy="240" r="8"/> <!-- (6,2) maps to (180, 300-60) = (180, 240) -->
+                <circle id="point" cx="270" cy="30" r="8"/> <!-- (9,9) maps to (270, 300-270) = (270, 30) -->
+                <line id="axis" x1="1" y1="1" x2="1" y2="299" stroke="black" stroke-width="5"/> <!-- vertical axis -->
+                <line id="axis" x1="1" y1="299" x2="299" y2="299" stroke="black" stroke-width="5"/> <!-- horizontal axis -->
             </svg>
             
         </div>
         <div class="item" style="flex:40%">
-            <p id="recent">Last point clicked:<br>(0,0)</p>
-            <p>Select the x coordinate for the point you want to add</p>
-            <select name="cars" id="cars">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-            </select>
-           <h2>Text 1</h2>
+            <p>
+                Last point clicked:
+                <div id="recent">(0,0)</div>
+            </p>
+            <p>Select the x coordinate for the point you want to add. 
+                <select id="xdropdown" size=1>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+            </p>
+            <p>Select the y coordinate for the point you want to add. 
+                <select id="ydropdown" size=1>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+            </p>
+            <p>
+                <button id="add">Add point</button>
+            </p>
         </div>
     </div>
+
+    <h2 class="centered">Acknowledgements</h2>
+    <div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
