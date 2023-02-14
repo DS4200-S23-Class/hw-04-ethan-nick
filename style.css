@@ -12,11 +12,11 @@ li {
     text-align: center;
 }
 
-#point {
+.point {
     fill: purple;
 }
 
-#point:hover {
+.point:hover {
     fill: red;
 }
 
@@ -33,6 +33,7 @@ li {
     display: inline-flex;
     flex-direction:column;
     justify-content: top;
+    align-items: center;
 }
 
 
