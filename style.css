@@ -1,7 +1,6 @@
 body {
     font-family: Arial; 
 }
-
 li {
     font-size: 14px;
 }
@@ -9,10 +8,12 @@ li {
 .bold {
     font-weight: bold;
 }
-
 .centered {
     text-align: center;
 }
+
+.point {
+    stroke="purple"
 
 /* style for flexbox
     box = parent, item=child */
@@ -23,7 +24,6 @@ li {
     flex-direction: row;
     text-align: left;
 }
-
 .item{
     display: inline-flex;
     flex-direction:column;
