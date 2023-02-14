@@ -5,3 +5,7 @@ document.getElementById('add').addEventListener('click', function(){
 	var ydropdown = document.getElementById("ydropdown");
 	var newx = ydropdown.value;
 }
+
+function updatescore() {
+      document.getElementById("recent").innerHTML = "UPDATED";
+}
