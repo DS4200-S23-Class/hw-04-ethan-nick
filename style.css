@@ -13,7 +13,12 @@ li {
 }
 
 #point {
-    fill: #A020F0;
+    fill: purple;
+}
+
+#point:hover {
+    background-color: red;
+    fill: blue;
 }
 
 /* style for flexbox
@@ -31,9 +36,7 @@ li {
     justify-content: top;
 }
 
-.item:hover {
-    background-color: red;
-}
+
 
 
 
