@@ -13,7 +13,7 @@ li {
 }
 
 .point {
-    stroke="purple"
+    background: #A020F0
 }
 
 /* style for flexbox
