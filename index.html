@@ -15,13 +15,13 @@
         <div class="item" style="flex:60%">
             <svg width="300px" height="300px">
                 <!-- (1,2) maps to (30, 300-60) = (30, 240) -->
-                <circle id="point" cx="30" cy="240" r="8" onclick="highlight()"/> 
+                <circle id="(1, 2)" class="point" cx="30" cy="240" r="8" onclick="highlight(this.id)"/> 
                 <!-- (2,4) maps to (60, 300-120) = (60, 180) -->
-                <circle id="point" cx="60" cy="180" r="8" onclick="highlight()"/> 
+                <circle id="(2, 4)" class="point" cx="60" cy="180" r="8" onclick="highlight(this.id)"/> 
                 <!-- (6,2) maps to (180, 300-60) = (180, 240) -->
-                <circle id="point" cx="180" cy="240" r="8" onclick="highlight()"/> 
+                <circle id="(6, 2)" class="point" cx="180" cy="240" r="8" onclick="highlight(this.id)"/> 
                 <!-- (9,9) maps to (270, 300-270) = (270, 30) -->
-                <circle id="point" cx="270" cy="30" r="8" onclick="highlight()"/> 
+                <circle id="(9, 9)" class="point" cx="270" cy="30" r="8" onclick="highlight(this.id)"/> 
                 <!-- vertical axis -->
                 <line id="axis" x1="1" y1="1" x2="1" y2="299" stroke="black" stroke-width="5"/> 
                 <!-- horizontal axis -->
@@ -32,7 +32,7 @@
         <div class="item" style="flex:40%">
             <p>
                 Last point clicked:
-                <div id="recent">(0,0)</div>
+                <div id="recent">&nbsp</div>
             </p>
             <p>Select the x coordinate for the point you want to add. 
                 <select id="xdropdown" size=1>

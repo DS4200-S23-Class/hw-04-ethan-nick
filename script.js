@@ -2,9 +2,11 @@ function updatescore() {
     document.getElementById("recent").innerHTML = "UPDATED";
 }
 
-function highlight() {
-	document.getElementById("point").style.stroke="orange";
-}
+function highlight(point_id)
+  {
+      document.getElementById(point_id).style.stroke="orange";
+      document.getElementById("recent").innerHTML = point_id;
+  }
 
 /**
 document.getElementById('add').addEventListener('click', function(){
