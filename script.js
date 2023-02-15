@@ -1,13 +1,19 @@
 function plot() {
-    document.getElementById("recent").innerHTML = "UPDATED";
     var xdropdown = document.getElementById("xdropdown");
 	var newx = xdropdown.value;
+	newx = newx * 30
 
 	var ydropdown = document.getElementById("ydropdown");
 	var newy = ydropdown.value;
+	newy = 300 - newy*30
 
-	alert(newy)
+	var frame = document.getElementById("frame");
 
+	var point = document.createElement("circle");
+	point.setAttribute("cx", x);
+	point.setAttribute("cy", y);
+	point.setAttribute("r", 5);
+	frame.appendChild(point);
 	
 }
 
