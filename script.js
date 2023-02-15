@@ -21,7 +21,7 @@ function plot() {
 }
 
 function highlight(point_id) {
-      document.getElementById(point_id).style.stroke="orange";
+      document.getElementById(point_id).classList.toggle('highlight');
       document.getElementById("recent").innerHTML = point_id;
   }
 

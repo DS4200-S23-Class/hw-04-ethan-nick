@@ -12,6 +12,10 @@ li {
     text-align: center;
 }
 
+.highlight {
+    stroke: orange;
+}
+
 .point {
     fill: purple;
     stroke-width: 5px;
